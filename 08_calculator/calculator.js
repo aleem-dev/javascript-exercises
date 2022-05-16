@@ -1,6 +1,11 @@
-const add = function() {
-	
+const add = function(...Args) {
+	let result = 0;
+  for (let index = 0; index < Args.length; index++) {
+    result += Args[index];
+  }
+  return result;
 };
+
 
 const subtract = function() {
 	
